@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.center-section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.custom-hidden{
+    opacity: 0.2;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.custom-show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.custom-fade-in {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 2s;
+  }
+  
+.custom-fade-in.animate {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  @media(prefers-reduced-motion) {
+    .custom-hidden .custom-show .custom-fade-in .custom-fade-in.animate{
+        transition: none;
+    }
+  }
+  

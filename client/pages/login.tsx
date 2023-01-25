@@ -6,7 +6,10 @@ import Image from 'next/image';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Layout from './Layout';
+
 import logo from '../images/logo.png'
+
 
 
 
@@ -20,10 +23,8 @@ export default function Login () {
       }
       
 
-
-
 return (
-    <div className="light-bg">
+
 <div className="signup-container min-h-screen flex items-center justify-center py-12 px-4 lg:px-8">
 		<div className="max-w-md w-full space-y-8 border border-black">
 			<div>
@@ -76,7 +77,7 @@ return (
                 <div className="flex items-center">
                     <button type="button" onClick={handleCheckboxClick} >
                         <label htmlFor="remember_me" className="custom-checkbox-label custom-container pb-3">
-                            <input type="checkbox" name="remember_me" checked={isChecked}/>
+                            <input type="checkbox" name="remember_me" checked={isChecked} defaultChecked/>
                             <div className="checkmark"></div>
                         </label>
                     </button>
@@ -116,6 +117,6 @@ return (
 </form>
 </div>
 </div> 
-</div>
+
 )
 }

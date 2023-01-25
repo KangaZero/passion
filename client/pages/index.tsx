@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
+import Draggable, {DraggableCore} from 'react-draggable';
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 
+// import RainText from '../components/RainText';
 import profPic from '../images/profile.png';
 
 export default function HomePage() {
@@ -15,7 +17,7 @@ export default function HomePage() {
     setAnimate(true);
   // The other sections
     const observer = new IntersectionObserver((entries) => {
-      console.log("entries", entries)
+      // console.log("entries", entries)
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setShow(true);
@@ -30,6 +32,11 @@ export default function HomePage() {
 
   return (
     <div className='light-bg'>
+
+      <section ref={sectionsRef} className={`center-section`}>
+        <h1>Welcome to Passion</h1>
+        <p></p>
+      </section>
 
       <section ref={sectionsRef} className={`center-section custom-fade-in ${animate ? 'animate' : ''}`}>
         <h1>Welcome to Passion</h1>

@@ -40,16 +40,19 @@ Code has been altered to adjust the application */
     transform: rotate(-20deg);
   }
 
+  /* NAV */
+
   .nav-light-gradient {
-    background: linear-gradient(
+    /* background: linear-gradient(
         #ffab91 0%,
         #ff8a80 30%, 
         #2792ab 50%, 
         #651fff 75%, 
         #7c4dff 100%
-        );
-    /* background: linear-gradient(#5c6bc0 0%, #7e57c2 40%, #ff8a65 75%, #ffa082 95%); */
-    /* background: linear-gradient(#6f52ed 0%, #7b5fff 40%, #ff7b6a 75%, #ffa76a 95%); */
+        ); */
+       
+    background: rgba(253, 248, 221, 0.8);
+    opacity: 0.35;
     filter: blur(4px);
     z-index: -1;
     /* background-image: linear-gradient(
@@ -84,13 +87,67 @@ Code has been altered to adjust the application */
   .light-text {
     color:rgb(92, 46, 46);
   }
-  /* .light-bg:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #111;
-    height: 10%;
-  } */
+
+  .light-text-2{
+    color: #7c4dff; 
+  }
+
+  .light-text-3 {
+    color: #45269b;
+  }
+
+  /* Button */
+
+  /* Cursor */
+  .light-cursor {
+     width: 25px;
+    height: 25px;
+    border-radius: 60%;
+    background: rgba(253, 248, 221, 0.8);
+    object-fit: fill;
+    background-image: url('../images/quaver-note.png');
+    filter: blur(4px);
+    opacity: 0.8;
+  }
+  
+
+   /* NAV */
+   .nav-light-gradient {
+    /* background: linear-gradient(
+        #ffab91 0%,
+        #ff8a80 30%, 
+        #2792ab 50%, 
+        #651fff 75%, 
+        #7c4dff 100%
+        ); */
+       
+    /* background: rgba(253, 248, 221, 0.8); */
+    opacity: 0.35;
+    filter: blur(1px);
+    z-index: 2;
+    /* background-image: linear-gradient(
+      270deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%,
+      hsl(221deg 73% 70%) 74%,
+      hsl(220deg 76% 51%) 100%
+    );
+    filter: blur(50px); */
+  }
+
+  .nav-light-text {
+    background: linear-gradient(
+        35deg,
+        #ffa9fe 0%,
+        #ffab91 50%,
+        #ff8a80 100%
+        ); 
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
+   opacity: 0.85;
+   filter: blur(1px);
+
+  }

@@ -1,5 +1,17 @@
 
 import { motion } from "framer-motion";
+import Cursor from "../components/cursor";
+import Head from "next/head";
+
+const Header = () => (
+  // <html lang="en">
+    <Head>
+      <link rel="preconnect" href="https://stijndv.com" />
+      <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+    </Head>
+// </html>
+
+)
 
 const Layout = ({ children }) => (
   // Create if theme == light ? light-bg : dark-bg 
@@ -17,6 +29,7 @@ const Layout = ({ children }) => (
       
       {children}
       
+      <Cursor />
     </motion.div>
   </div>
 );

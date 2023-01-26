@@ -29,7 +29,7 @@ return (
 		<div className="max-w-md w-full space-y-8 border border-black">
 			<div>
 				<Image className="mx-auto h-12 w-auto" src={logo} alt="Workflow" />
-				<h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+				<h2 className="mt-6 text-center text-3xl font-extrabold light-text-2">
 					Sign in
 				</h2>
 				<p className="mt-2 text-center text-sm light-text">
@@ -81,7 +81,7 @@ return (
                             <div className="checkmark"></div>
                         </label>
                     </button>
-                    <p className="pl-3 font-medium">Remember me?</p>
+                    <p className="pl-3 light-text-3 font-medium">Remember me?</p>
 					{/* <input id="remember_me" name="remember_me" type="checkbox" className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
 					<label htmlFor="remember_me" className="relative pb-5 ml-2 block text-sm text-gray-900">
 						Remember me
@@ -89,7 +89,7 @@ return (
 				</div>
 
 				<div className="text-sm">
-					<Link href="/reset-password" className="light-link font-medium">
+					<Link href="/reset-password" className="light-text-2 light-link font-medium">
                     Forgot your password?
 					</Link>
 				</div>

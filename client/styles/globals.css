@@ -48,3 +48,13 @@
   .garamond {
     font-family: 'garamond';
   }
+
+  .eudoxus {
+  font-family: "Eudoxus Sans";
+  }
+
+  /* cursor */
+
+  .cursor-pointer {
+    cursor: url('../images/quaver-note.png'), auto;
+  }
